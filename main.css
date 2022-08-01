@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 .area-wrapper {
     width: 100%;
     height: 100%;
@@ -17,17 +16,15 @@
     height: 600px;
     background-color: beige;
     display: grid;
-    flex-wrap: nowrap;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid black;
 }
-
 
 .box {
     width:200px;
     height:200px;
-    border: 1px solid black;
     box-sizing: border-box;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
     font-size: 64px;
     color: rgb(58, 12, 101);
     font-weight: 600;
@@ -36,13 +33,31 @@
     align-items: center;
 }
 
+#area :nth-child(1) {
+    border-top: 2px solid black;
+}
+
+#area :nth-child(2) {
+    border-top: 2px solid black;
+}
+
+#area :nth-child(3) {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#area :nth-child(6) {
+    border-right: 2px solid black;
+}
+
+#area :nth-child(9) {
+    border-right: 2px solid black;
+}
 
 h1 {
     text-align: center;
     font-size: 50px;
 }
-
-
 
 #modal-result-wrapper {
     width: 100%;
@@ -53,7 +68,8 @@ h1 {
     position: absolute;
     text-align: center;
     font-size: 40px;
-    border: 1px solid black;
+    border: 2px solid black;
+    
 }
 
 #overlay {
@@ -64,7 +80,6 @@ h1 {
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 #modal-window {
     width: 400px;
@@ -95,7 +110,6 @@ h1 {
 
 }
 
-
 #content {
     width: 400px;
     font-weight: 600;
@@ -105,7 +119,6 @@ h1 {
     padding: 30px 10px;
 }
 
-
 @media (max-width: 650px) {  
     
     #area {
@@ -113,34 +126,34 @@ h1 {
     height: 450px;
 }
 
-.box {
-    width:150px;
-    height:150px;
+    .box {
+        width:150px;
+        height:150px;
 }
 
-h1 {
-    font-size: 44px;
+    h1 {
+        font-size: 44px;
 }
 
-#modal-result-wrapper {
-    font-size: 36px;
+    #modal-result-wrapper {
+        font-size: 36px;
 }
 
-#modal-window {
-    width: 300px;
-    height: 150px;
+    #modal-window {
+        width: 300px;
+        height: 150px;
 }
 
-#btn-close {
-    width: 300px;
-    height: 50px;
-    font-size: 26px;
-
+    #btn-close {
+        width: 300px;
+        height: 50px;
+        font-size: 26px;
 }
 
-#content {
-    width: 300px;
-} }
+    #content {
+        width: 300px;
+} 
+}
 
 @media (max-width: 480px) { 
     #area {
@@ -174,6 +187,6 @@ h1 {
     
     #content {
         width: 200px;
-         height: 160px;
+        height: 160px;
     } 
  }
