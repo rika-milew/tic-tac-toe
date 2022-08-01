@@ -23,7 +23,6 @@ else {
 }
 )
 
-
 const check = () => {
     const boxes = document.getElementsByClassName('box');
     const arr = [
@@ -59,18 +58,15 @@ if (move >= 9) {
 }
 }
 
-
 const prepareResult = winner => {
     contentWrapper.innerHTML = `Ура! ${winner}`;
     modalResult.style.display = 'block';
 }
 
-
 const closeModal = () => {
     modalResult.style.display = 'none';
     location.reload();
 }
-
 
 overlay.addEventListener('click', closeModal);
 buttonClose.addEventListener('click', closeModal);
