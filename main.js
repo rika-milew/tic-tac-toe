@@ -14,8 +14,7 @@ if(e.target.className = 'box') {
     check ();
     check2 (); 
     console.log(move);
-        }
-else {
+        } else {
     check2 ();
     console.log(move);
 }
@@ -40,8 +39,8 @@ const check = () => {
         if(
             boxes[arr[i][0]].innerHTML == 'X' && boxes[arr[i][1]].innerHTML == 'X' && boxes[arr[i][2]].innerHTML == 'X'
         ) {
-result = 'Победили крестики!';
-prepareResult(result);
+    result = 'Победили крестики!';
+    prepareResult(result);
         } else if (
     boxes[arr[i][0]].innerHTML == '0' && boxes[arr[i][1]].innerHTML == '0' && boxes[arr[i][2]].innerHTML == '0'
 ) {
