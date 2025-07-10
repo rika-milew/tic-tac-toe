@@ -5,6 +5,7 @@ A simple and interactive Tic-Tac-Toe (Крестики-нолики) game built 
 ## 🚀 Demo
 
 👉 [Play Online](https://rika-milew.github.io/tic-tac-toe/)
+
 🧩 A fun mini-game built to practice DOM manipulation and game logic.
 
 ---
